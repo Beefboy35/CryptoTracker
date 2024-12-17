@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticker: {{ data.name }}</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <div class="info" id="curr-background-height">
+        <div class="curr" id="result">
+            <ul><li>Name: {{ data.name }}</li>
+                <li>Ticker: {{ data.symbol }}</li>
+                <li>Price: {{ data.quote.USD.price }}$</li>
+                <li>24H Volume: {{ data.quote.USD.volume_24h }}$</li>
+                <li>24H Percent Change: {{ data.quote.USD.percent_change_24h }}</li>
+                <li>Market Capitalization: {{ data.quote.USD.market_cap }}$</li>
+                <li>Available Coins: {{ data.total_supply }}</li>
+                <li>Total Amount: {{ data.max_supply }}</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

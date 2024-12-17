@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ListOfCryptos</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+  <div class="info">
+      <h2 class="header">
+          The list of cryptos
+      </h2>
+      <button onclick="interaction()">Press Me</button>
+      <h4 id="button"></h4>
+       {% for cur in crypto %}
+    <ul class="curr">
+        <li>ID: {{ cur.id }} </li>
+        <li>Ticker: {{ cur.name }}</li>
+        <li>Symbol: {{ cur.symbol }}</li>
+        <li>Price: {{ cur.quote.USD.price | round(2) }}$</li>
+    </ul>
+      {%  endfor  %}
+  </div>
+    <script src="static/script.js"></script>
+</body>
+</html>
