@@ -5,7 +5,8 @@
 <em>Как запустить:</em>
 <ol>
 <li>Регистрируемся на <b>CoinMarketCap</b> и получаем свой API KEY</li>
-<li>Вставляем его в <b>.env</b> файл в формате API_KEY=ваш ключ</li>
+<li>Создаем файл <b>.env</b> куда вставляем его в формате API_KEY=ваш ключ, также в <b>.env</b> вставляем
+API_URL="https://pro-api.coinmarketcap.com"</li>
 <li>Запускаем файл <b>main.py</b> и переходим по url: 
 <em>http://localhost:7321</em></li>
 <li>Доступна две функции <ol>
